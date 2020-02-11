@@ -8,5 +8,5 @@ function setup() {
 function draw() {
   // put drawing code here
   textFont(zombieland,120);
-  text("ProblemChild!!",100,100);
+  text("Problem Child",100,100);
 }
