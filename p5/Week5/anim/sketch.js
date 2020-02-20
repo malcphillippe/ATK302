@@ -8,6 +8,8 @@ function setup() {
 function draw() {
   // put drawing code here
   background('yellow')
+  fill('black')
+
   rect(x,100,100,100,100);
   text("BABAYAGA",x,100);
   x = x + 5;

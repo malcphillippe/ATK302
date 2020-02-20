@@ -1,7 +1,7 @@
 var song1;
 
 function preload() {
-  song1 = loadSound('assets/hellcat.mp3');
+  song1 = loadSound('asssets/hellcat.mp3');
 }
 
 function setup() {
