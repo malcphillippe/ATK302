@@ -9,11 +9,11 @@ function setup() {
 }
 
 function draw() {
+  fill('black')
   rect(width/2, height/2, 200, 500);
-  ellipse(width/2, height/2, 150,150);
-  ellipse(width/2, height/2 - 160, 150, 150);
-  fill('red');
-  ellipse(width/2, height/2 + 160, 150, 150);
+
+
+
 //increase timer
 
 timer = 1+timer;
@@ -34,15 +34,21 @@ if (myState >= 3 ) {
 
 switch (myState) {
   case 0:
+  fill(97, 255, 69, 100)
+  ellipse(width/2, height/2, 150,150);
   console.log('Green Light');
     break;
 
   case 1:
+  fill(255,234,67,100)
+    ellipse(width/2, height/2 - 160, 150, 150);
   console.log('yellow Light');
 
     break;
 
     case 2:
+    fill(255,34,26,100)
+    ellipse(width/2, height/2 + 160, 150, 150);
     console.log('red Light');
 
       break;
