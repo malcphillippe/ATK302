@@ -1,21 +1,22 @@
-var cars = [] ;
+var cars = [];
 
 function setup() {
   createCanvas(800, 800);
 
-for (var i = 0 ; i < 20 ;  i++) {
-  cars.push(new Car());
+  for (var i = 0; i < 20; i++) {
+    cars.push(new Car());
 
-}
+  }
 
 }
 
 function draw() {
-  background('lightblue')
+  background('lightblue') ;
 
-for (var i = 0 ; i < cars.length() ;  i++) {
+for (var i = 0; i < cars.length; i++) {
   cars[i].display();
   cars[i].drive();
+}
 
 
 }
@@ -31,16 +32,14 @@ function Car() {
   // methods
   this.display = function() {
     fill(this.r, this.g, this.b);
-    rect(this.pos.x, this.pos.y, 100, 100, 100);
+    rect(this.pos.x, this.pos.y, 100, 100);
   }
-
   this.drive = function() {
     this.pos.add(this.vel);
     if (this.pos.x > width) this.pos.x = 0;
     if (this.pos.x < 0) this.pos.x = width;
     if (this.pos.y > height) this.pos.y = 0;
     if (this.pos.y < 0) this.pos.y = height;
-
-
   }
+
 }
